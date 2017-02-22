@@ -1,6 +1,9 @@
 var APP = {} || APP;
 
+APP.paralax = {
+
+}
 
 window.onload = function() {
-    (console.log("load!"));
+    var rellax = new Rellax('.rellax');
 };
