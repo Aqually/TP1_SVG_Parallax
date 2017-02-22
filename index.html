@@ -9,42 +9,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>TP1 par Marie-Maxime Tanguay</title>
 <body>
-    <div id="ciel">
+    <div id="container">
+        <div id="ciel">
 
-        <svg id="etoile" class="rellax" data-rellax-speed="-10" viewBox="0 0 2000 2000">
-            <defs>
-                <g id="def-etoile">
-                    <g>
-                        <path id="pathEtoile"
-                           d="M 531.81933,395.85496 C 531.30585,394.47996 525.53381,373.99165 518.99259,350.32538 L 507.09945,307.29581 L 461.93677,294.82538 C 437.09729,287.96665 416.92367,282.10581 417.10649,281.80129 C 417.28932,281.49678 437.61472,275.65705 462.27406,268.82412 L 507.10921,256.40062 L 519.51545,211.62779 C 526.33887,187.00273 532.21052,166.85496 532.56355,166.85496 C 532.91658,166.85496 538.78823,187.00273 545.61165,211.62779 L 558.01789,256.40062 L 602.79072,268.80686 C 627.41578,275.63028 647.56355,281.50193 647.56355,281.85496 C 647.56355,282.20799 627.41471,288.07993 602.78834,294.90372 L 558.01314,307.31061 L 545.38303,352.83279 C 534.97499,390.34607 532.58868,397.91513 531.81933,395.85496 z" />
+            <svg id="etoile" class="rellax" data-rellax-speed="-10" viewBox="0 0 2000 2000">
+                <defs>
+                    <g id="def-etoile">
+                        <g>
+                            <path id="pathEtoile"
+                               d="M 531.81933,395.85496 C 531.30585,394.47996 525.53381,373.99165 518.99259,350.32538 L 507.09945,307.29581 L 461.93677,294.82538 C 437.09729,287.96665 416.92367,282.10581 417.10649,281.80129 C 417.28932,281.49678 437.61472,275.65705 462.27406,268.82412 L 507.10921,256.40062 L 519.51545,211.62779 C 526.33887,187.00273 532.21052,166.85496 532.56355,166.85496 C 532.91658,166.85496 538.78823,187.00273 545.61165,211.62779 L 558.01789,256.40062 L 602.79072,268.80686 C 627.41578,275.63028 647.56355,281.50193 647.56355,281.85496 C 647.56355,282.20799 627.41471,288.07993 602.78834,294.90372 L 558.01314,307.31061 L 545.38303,352.83279 C 534.97499,390.34607 532.58868,397.91513 531.81933,395.85496 z" />
+                        </g>
                     </g>
-                </g>
-            </defs>
+                </defs>
 
-            <use xlink:href="#def-etoile"/>
-            <use xlink:href="#def-etoile" transform="translate(150 60)"/>
-            <use xlink:href="#def-etoile" transform="translate(75 100)"/>
-        </svg>
+                <use xlink:href="#def-etoile"/>
+                <use xlink:href="#def-etoile" transform="translate(150 60)"/>
+                <use xlink:href="#def-etoile" transform="translate(75 100)"/>
+            </svg>
 
-        <svg id="montagne" viewBox="150 0 500 225" class="rellax" data-rellax-speed="-10">
-            <defs>
-                <g id="def-montagne">
-                 <path stroke="#000" id="montagne_fond" class="rellax" data-rellax-speed="1" d="m-16.5,210.93309c0,0 99.66216,-172.6483 176.43586,-107.47939c76.77371,65.1689 109.64941,111.80742 109.151,111.80742c0.49841,0 90.06175,-164.66422 212.81952,-163.74378c122.75777,0.92044 163.59522,189.48266 127.09363,195.48266c-36.50159,6 -625.50001,-36.06691 -625.50001,-36.06691z" stroke-width="1.5" fill="#fff"/>
-                 <path stroke="#000" id="montagne_avant" class="rellax" data-rellax-speed="1" d="m153.85186,225.030975c-162.205935,-20.23988 119.323906,-155.718012 136.10383,-113.147621c16.779924,42.570392 130.510522,150.116645 130.044413,150.116645"  stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
-                </g>
-            </defs>
+            <svg id="montagne" viewBox="150 0 500 225" class="rellax" data-rellax-speed="-10">
+                <defs>
+                    <g id="def-montagne">
+                     <path stroke="#000" id="montagne_fond" class="rellax" data-rellax-speed="1" d="m-16.5,210.93309c0,0 99.66216,-172.6483 176.43586,-107.47939c76.77371,65.1689 109.64941,111.80742 109.151,111.80742c0.49841,0 90.06175,-164.66422 212.81952,-163.74378c122.75777,0.92044 163.59522,189.48266 127.09363,195.48266c-36.50159,6 -625.50001,-36.06691 -625.50001,-36.06691z" stroke-width="1.5" fill="#fff"/>
+                     <path stroke="#000" id="montagne_avant" class="rellax" data-rellax-speed="1" d="m153.85186,225.030975c-162.205935,-20.23988 119.323906,-155.718012 136.10383,-113.147621c16.779924,42.570392 130.510522,150.116645 130.044413,150.116645"  stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+                    </g>
+                </defs>
 
-            <use xlink:href="#def-montagne" transform="translate(-70 40)"/>
-            <use xlink:href="#def-montagne" transform="translate(150 60)"/>
-            <use xlink:href="#def-montagne" transform="translate(75 100)"/>
-        </svg>
+                <use xlink:href="#def-montagne" transform="translate(-70 40)"/>
+                <use xlink:href="#def-montagne" transform="translate(150 60)"/>
+                <use xlink:href="#def-montagne" transform="translate(75 100)"/>
+            </svg>
+        </div>
+
+        <div id="leSol" class="rellax" data-rellax-speed="-3">
+            <div id="lesArbres">
+                <svg id="arbres" data-rellax-speed="3" viewBox="0 0 5000 2500" class="rellax">
+                    <defs>
+                        <g id="def-arbre">
+                            <path d="m371.74 324.66c-6.4438 17.916-30.628 31.804-44.713 48.996-27.593 33.677-51.79 69.926-75.591 103.2-49.671 69.444-48.026 141.08-29.207 212.41 78.158 148.48 255.52 145.24 340.42 2.5414 32.271-96.147 0.30937-179-64.098-251.21-21.288-23.869-36.352-44.136-63.292-65.809-20.04-16.122-53.807-33.818-63.516-50.122z" fill="#9acd32" fill-rule="evenodd"/>
+                            <path d="m373.84 475.57 1.7812 51.62 1.7812 76.562-65.875-33.812 15.369 18.282 54.061 42.245-7.1199 58.728-78.31-58.755 1.7812 12.469 46.744 38.851 23.926 22.628 2.2969 16.864 10.595 113.87-17.718 105.08 81.887 3.5615-18.349-66.554-22.57-155.95 29.346-41.895 57.873-41.792-3.5656-16.023-81.903 64.086-3.5333-72.967 38.827-28.676 19.894-24.732-60.5 33.812-12.474-129.96z" fill="#8b4513" fill-rule="evenodd"/>
+                        </g>
+                    </defs>
+
+                    <use class="useArbre" xlink:href="#def-arbre" transform="translate(1000 0)"/>
+                    <use class="useArbre" xlink:href="#def-arbre" transform="translate(1500 0)"/>
+                    <use class="useArbre" xlink:href="#def-arbre" transform="translate(2000 0)"/>
+                    <use class="useArbre" xlink:href="#def-arbre" transform="translate(3000 0)"/>
+                    <use class="useArbre" xlink:href="#def-arbre" transform="translate(4000 0)"/>
+                </svg>
+            </div>
+        </div>
     </div>
 
-    <div id="leSol" class="rellax" data-rellax-speed="-3">
-
-    </div>
-
-    <footer class="rellax" data-rellax-speed="2">
+    <footer class="rellax" data-rellax-speed="1">
         <p>Créé par Marie-Maxime Tanguay</p>
     </footer>
 
