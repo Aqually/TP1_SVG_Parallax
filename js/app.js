@@ -1,4 +1,4 @@
-var arbres
+var etoiles
 var taille = 1;
 
 function getTranformTranslate(element){
@@ -6,26 +6,23 @@ function getTranformTranslate(element){
     return string.substring(string.indexOf("(")+1, string.indexOf(")")).split(" ");
 }
 
-function animRandomEtoile(){
-    
-}
+
 
 function scaleEtoile() {
     var fractionDuScroll = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
     var trace = taille * fractionDuScroll +1
-    for (var i = 0; i < arbres.length; i++) {
-            var translate = getTranformTranslate(arbres[i]);
-            arbres[i].style.transform = "translateX("+ translate[0] +"px) translateY("+ translate[1] +"px) scale("+trace+")";
+    for (var i = 0; i < etoiles.length; i++) {
+            var translate = getTranformTranslate(etoiles[i]);
+            etoiles[i].style.transform = "translateX("+ translate[0] +"px) translateY("+ translate[1] +"px) scale("+trace+")";
     }
 }
 
-function changerTailleDesArbres(){
-    // on cible l'élément « path » que l'on veut animer
-    arbres = document.getElementsByClassName("uneEtoile");
+function animerEtoile(){
+    etoiles = document.getElementsByClassName("uneEtoile");
     window.addEventListener("scroll", scaleEtoile);
 }
 
 window.onload = function() {
     var rellax = new Rellax('.rellax');
-    changerTailleDesArbres();
+    animerEtoile();
 };
