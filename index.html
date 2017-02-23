@@ -13,6 +13,8 @@
     <div id="container">
         <div id="ciel">
 
+
+
             <svg id="etoile" class="rellax" data-rellax-speed="-2" viewBox="0 0 2000 1000">
                 <defs>
                     <g id="def-etoile">
@@ -31,7 +33,27 @@
                 <use xlink:href="#def-etoile" class="uneEtoile" transform="translate(1000 0)"/>
             </svg>
 
-            <svg id="montagne" viewBox="150 0 500 225" class="rellax" data-rellax-speed="-9">
+            <svg id="lune" viewbox="0 0 10 10" class="rellax" data-rellax-speed="-10">
+                <defs>
+                    <g id="def-lune">
+                        <path d="M50 20A40 40 0 1 0 50 70 30 30 0 1 1 50 20z"/>
+                    </g>
+                </defs>
+                <use xlink:href="#def-lune" transform="translate(1 1) scale(0.01)"/>
+            </svg>
+
+            <svg id ="nuage" viewBox="0 0 16 16" class="rellax" data-rellax-speed="-10">
+                <defs>
+                    <g id="def-nuage">
+                        <path id="pathNuage" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925" transform="matrix(.77976 0 0 .78395-299.99-418.63)" />
+                    </g>
+                </defs>
+                <use xlink:href="#def-nuage" transform="scale(0.5) translate(10,0)"/>
+                <use xlink:href="#def-nuage" transform="scale(0.5) translate(20,1)"/>
+                <use xlink:href="#def-nuage" transform="scale(0.5) translate(1,2)"/>
+            </svg>
+
+            <svg id="montagne" viewBox="150 0 500 225" class="rellax" data-rellax-speed="-5">
                 <defs>
                     <g id="def-montagne">
                      <path id="montagne_fond" class="rellax" data-rellax-speed="0.75" d="m-16.5,210.93309c0,0 99.66216,-172.6483 176.43586,-107.47939c76.77371,65.1689 109.64941,111.80742 109.151,111.80742c0.49841,0 90.06175,-164.66422 212.81952,-163.74378c122.75777,0.92044 163.59522,189.48266 127.09363,195.48266c-36.50159,6 -625.50001,-36.06691 -625.50001,-36.06691z" />
@@ -65,14 +87,14 @@
         </div>
     </div>
 
-    <footer class="rellax" data-rellax-speed="3">
-        <ul class="rellax" data-rellax-speed="1">
+    <footer class="rellax" data-rellax-speed="2">
+        <ul class="rellax" data-rellax-speed="-0.5">
             <li><a href="https://github.com/aqually"><i class="fa fa-github" aria-hidden="true"></i></a></li>
             <li><a href="https://www.linkedin.com/in/marie-maxime-tanguay-a9436b104/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
             <li><a href="https://twitter.com/AlpacaPink"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             <li><a href="mailto:mariemaximetanguay@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
         </ul>
-        <article class="rellax" data-rellax-speed="1.1">
+        <article class="rellax" data-rellax-speed="-0.75">
             <p>Créé par Marie-Maxime Tanguay</p>
             <p>Collège de Maisonneuve 2017</p>
         </article>
